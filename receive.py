@@ -24,7 +24,7 @@ mqttc = mqtt.Client()
 
 mqttc.on_message = on_message 
 
-mqttc.connect("mqtt.cisco.com") #128.107.70.30
+mqttc.connect("brokerUrl.domain.com") #Change to mqtt.cisco.com or 128.107.70.30 to access Cisco's test/public MQTT broker.
 mqttc.subscribe("devnet/sensors")
 
 mqttc.loop_forever() #start the loop
